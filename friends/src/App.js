@@ -19,9 +19,8 @@ function App() {
           </ul>
         </div>
         <Route path='/login' component={Login} />
-        <PrivateRoute path='/friends' component={Friends} />
+        <PrivateRoute exact path='/friends' component={Friends} />
         <Route path='/add-friend' component={AddFriend} />
-        <Friends />
       </Router>
     </div>
   );
